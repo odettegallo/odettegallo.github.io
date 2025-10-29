@@ -23,10 +23,8 @@
 </template>
 
 <script setup>
-// Importamos el nuevo componente de navegación
 import NavBar from './components/NavBar.vue'; 
-// Eliminamos: import { usePortfolioStore } from './stores/usePortfolioStore';
-// Eliminamos: const store = usePortfolioStore(); 
+
 </script>
 
 <style>
