@@ -7,7 +7,7 @@
             <v-col cols="12" sm="4" class="text-center">
               <v-avatar size="180" color="primary">
                 <!-- Reemplaza /path/to/your/photo.jpg con la ruta real de tu imagen en la carpeta public o assets -->
-                <v-img src="/path/to/your/photo.jpg" alt="Odette Gallo Martínez"></v-img>
+                <v-img src="./src/assets/img/foto_perfil.jpg" alt="Odette Gallo Martínez"></v-img>
               </v-avatar>
               <h1 class="text-h4 mt-4 mb-2 text-primary">{{ store.name }}</h1>
               <h2 class="text-h6 text-secondary">{{ store.title }}</h2>
