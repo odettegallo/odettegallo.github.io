@@ -5,7 +5,7 @@ export const usePortfolioStore = defineStore('portfolio', {
     // --- Datos Principales ---
     name: 'Odette Gallo Martínez',
     title: 'Front-End Trainee & Profesional TI',
-    tagline: 'Bootcamp Aplicaciones Front End Trainee OTEC UNAB 2025',
+    tagline: 'Trainee en Desarrollo Front-End',
     summary: '¡Hola! Soy Odette Gallo Martínez, y actualmente estoy cursando el Bootcamp de Aplicaciones Front End Trainee OTEC UNAB 2025, transformando mi sólida base administrativa y de TI en desarrollo Front-End. Poseo una base formal como Administradora Pública de la Universidad de Valparaíso y soy Profesional Certificada en Soporte de Tecnologías de la Información de Google. Cuento con más de 4 años de experiencia en Gestión Administrativa y 2 años en Soporte TI, lo que me permite abordar los proyectos con una visión integral, priorizando la organización, la eficiencia y la experiencia del usuario.',
     
     // --- Habilidades Técnicas ---
@@ -40,9 +40,9 @@ export const usePortfolioStore = defineStore('portfolio', {
 
     // --- Contacto/Social ---
     contact: {
-      email: 'tu.email@ejemplo.com', // Reemplazar con tu email real
-      linkedin: 'tu_linkedin_url',   // Reemplazar
-      github: 'tu_github_url',       // Reemplazar
+      email: 'odettegallo@outlook.es', 
+      linkedin: 'https://www.linkedin.com/in/odette-gallo-mart%C3%ADnez-35913b271/',   
+      github: 'https://github.com/odettegallo',
     }
   }),
   
