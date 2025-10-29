@@ -1,10 +1,10 @@
-// src/router/index.js (Debería verse similar a esto, solo añade la ruta del proyecto)
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import ProjectView from '../views/ProjectView.vue' // Importa la nueva vista
+import ExperienceView from '../views/ExperienceView.vue' // Nueva vista
+import ProjectsView from '../views/ProjectsView.vue'     // Nueva vista
+import ContactView from '../views/ContactView.vue'       // Nueva vista
 
 const router = createRouter({
-  // Importante: createWebHistory(import.meta.env.BASE_URL) es estándar en Vite
   history: createWebHistory(import.meta.env.BASE_URL), 
   routes: [
     {
@@ -13,10 +13,21 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/proyecto-destacado', // Nueva ruta para el proyecto
-      name: 'project',
-      component: ProjectView
+      path: '/experience',
+      name: 'experience',
+      component: ExperienceView
+    },
+    {
+      path: '/projects', // Reemplaza /proyecto-destacado por /projects para ser más genérico
+      name: 'projects',
+      component: ProjectsView
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: ContactView
     }
+    // Puedes añadir una ruta de 404 aquí si lo necesitas
   ]
 })
 

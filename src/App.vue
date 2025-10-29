@@ -62,7 +62,7 @@
 </template>
 
 <script setup>
-import { usePortfolioStore } from './stores/usePortafolioStore';
+import { usePortfolioStore } from './stores/usePortfolioStore';
 
 const store = usePortfolioStore();
 </script>

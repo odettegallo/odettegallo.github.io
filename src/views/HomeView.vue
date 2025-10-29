@@ -1,41 +1,62 @@
 <template>
-  <v-container>
-    <v-row class="text-center">
-      <v-col cols="12">
-        <v-avatar size="150">
-          <v-img src="/path/to/your/photo.jpg" alt="Odette Gallo Martínez"></v-img>
-        </v-avatar>
-        <h1 class="text-h3 mt-4 mb-2">Odette Gallo Martínez</h1>
-        <h2 class="text-h5 mb-4 text-primary">Front-End Trainee & Profesional TI</h2>
+  <v-container class="mt-8">
+    <v-row justify="center">
+      <v-col cols="12" md="10" lg="8">
+        <v-card class="pa-6 elevation-8" rounded="xl">
+          <v-row align="center">
+            <v-col cols="12" sm="4" class="text-center">
+              <v-avatar size="180" color="primary">
+                <!-- Reemplaza /path/to/your/photo.jpg con la ruta real de tu imagen en la carpeta public o assets -->
+                <v-img src="/path/to/your/photo.jpg" alt="Odette Gallo Martínez"></v-img>
+              </v-avatar>
+              <h1 class="text-h4 mt-4 mb-2 text-primary">{{ store.name }}</h1>
+              <h2 class="text-h6 text-secondary">{{ store.title }}</h2>
+            </v-col>
+            
+            <v-col cols="12" sm="8">
+              <v-chip size="large" color="success" class="mb-4">{{ store.tagline }}</v-chip>
+              
+              <p class="text-body-1 mb-6 text-justify">
+                {{ store.summary }}
+              </p>
 
-        <v-card class="pa-4 mb-6" elevation="3">
-          <p class="text-body-1">
-            Profesional con más de **4 años de experiencia en Gestión Administrativa** y **2 años en Soporte TI**, 
-            actualmente cursando el **Bootcamp Aplicaciones Front End Trainee OTEC UNAB 2025**. 
-            Mi enfoque es la mejora continua, aplicando una visión integral en proyectos tecnológicos.
-          </p>
+              <v-btn 
+                color="secondary" 
+                size="large" 
+                to="/experience" 
+                append-icon="mdi-arrow-right"
+              >
+                Ver Habilidades Clave
+              </v-btn>
+            </v-col>
+          </v-row>
         </v-card>
+      </v-col>
+    </v-row>
 
-        <v-card class="pa-4 mb-6" title="Habilidades Clave Front-End">
-          <v-chip-group>
-            <v-chip color="success">Vue.js</v-chip>
-            <v-chip color="info">Pinia</v-chip>
-            <v-chip color="info">Vue Router</v-chip>
-            <v-chip color="info">Vuetify</v-chip>
-            <v-chip color="warning">HTML5 / CSS / JS</v-chip>
-            <v-chip>Responsivo</v-chip>
-          </v-chip-group>
+    <!-- Services Section (Usando un card simple) -->
+    <v-row justify="center" class="mt-8">
+      <v-col cols="12" md="10" lg="8">
+        <v-card class="pa-6 elevation-4" rounded="lg">
+          <h3 class="text-h5 text-center mb-4 text-primary">Servicios / Enfoque Profesional</h3>
+          <v-row justify="center">
+            <v-col cols="12" sm="6" md="4" v-for="i in 3" :key="i">
+              <v-card class="pa-4 text-center" variant="outlined" :title="['Visión Integral', 'Orientación al Logro', 'Mejora Continua'][i-1]">
+                <v-icon color="primary" size="x-large" class="my-2">{{ ['mdi-sitemap', 'mdi-trophy', 'mdi-recycle-variant'][i-1] }}</v-icon>
+                <p class="text-caption">
+                  {{ ['Abordar proyectos con organización y eficiencia.', 'Fuerte impulso y enfoque en resultados.', 'Aprendizaje constante y actualización de conocimientos.'][i-1] }}
+                </p>
+              </v-card>
+            </v-col>
+          </v-row>
         </v-card>
-
-        <v-btn color="primary" size="large" to="/proyecto-destacado" class="mt-4">
-          Ver Proyecto Destacado 🚀
-        </v-btn>
-
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script setup>
-  // Lógica de Vue si fuera necesaria
+import { usePortfolioStore } from '../stores/usePortfolioStore';
+
+const store = usePortfolioStore();
 </script>
