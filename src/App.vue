@@ -1,45 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
-      <v-app-bar-title>
-        Odette Gallo - Portafolio Front-End
-      </v-app-bar-title>
-
-      <v-spacer></v-spacer>
-
-      <!-- Botones de navegación principal -->
-      <v-btn text to="/">
-        <v-icon left>mdi-account</v-icon>
-        About
-      </v-btn>
-
-      <v-btn text to="/experience">
-        <v-icon left>mdi-wrench-check</v-icon>
-        Experience & Skills
-      </v-btn>
-      
-      <v-btn text to="/projects">
-        <v-icon left>mdi-laptop-code</v-icon>
-        Projects
-      </v-btn>
-
-      <v-btn text to="/contact">
-        <v-icon left>mdi-email</v-icon>
-        Contact
-      </v-btn>
-
-      <!-- Icono de GitHub (Usando el dato del store) -->
-      <v-btn 
-        icon 
-        :href="store.contact.github" 
-        target="_blank"
-        class="ml-2"
-        v-if="store.contact.github && store.contact.github !== 'tu_github_url'"
-      >
-        <v-icon>mdi-github</v-icon>
-      </v-btn>
-
-    </v-app-bar>
+    <NavBar />
 
     <v-main class="bg-grey-lighten-3">
       <router-view v-slot="{ Component }">
@@ -62,9 +23,10 @@
 </template>
 
 <script setup>
-import { usePortfolioStore } from './stores/usePortfolioStore';
-
-const store = usePortfolioStore();
+// Importamos el nuevo componente de navegación
+import NavBar from './components/NavBar.vue'; 
+// Eliminamos: import { usePortfolioStore } from './stores/usePortfolioStore';
+// Eliminamos: const store = usePortfolioStore(); 
 </script>
 
 <style>
