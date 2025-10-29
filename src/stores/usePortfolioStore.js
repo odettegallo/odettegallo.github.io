@@ -19,11 +19,19 @@ export const usePortfolioStore = defineStore('portfolio', {
     additionalExperience: [
       {
         title: 'Diplomados', 
-        details: ['Marketing Digital y Gestión Estratégica', 'Comunicación en la Era Digital', 'Emprendimiento Social y Marketing Personal', 'Diseño y Programación Web']
+        details: ['Marketing Digital y Gestión Estratégica', 'Comunicación en la Era Digital', 'Emprendimiento Social y Marketing Personal', 'Diseño y Programación Web'],
+        diplomadosUrls: [
+          'https://drive.google.com/file/d/1npz6bx-Bc-wO_o2ai1NJKyXCvo5D8L4k/view?usp=drive_link',
+        
+        ],
       },
       {
         title: 'Cursos Destacados (Más de 100)', 
-        details: ['IA Generativa (Microsoft y LinkedIn)', 'Análisis de Datos y Fundamentos de Ciberseguridad', 'Gestión del Tiempo y Gestión de Proyectos', 'Habilidades Profesionales Blandas y Liderazgo', 'Microsoft 365 Avanzado (Excel, Word, etc.)']
+        details: ['IA Generativa (Microsoft y LinkedIn)', 'Análisis de Datos y Fundamentos de Ciberseguridad', 'Gestión del Tiempo y Gestión de Proyectos', 'Habilidades Profesionales Blandas y Liderazgo', 'Microsoft 365 Avanzado (Excel, Word, etc.)'],
+        coursesUrls: [
+          'https://drive.google.com/file/d/1xaW5Z5zYLm60MGNwgfn-fZq6VRhyF14g/view?usp=drive_link',
+          'https://drive.google.com/file/d/1WviRsGUJrb9aKrfi4dFW_SMo9jBLyzju/view?usp=drive_link'
+        ],
       },
     ],
     
@@ -34,7 +42,7 @@ export const usePortfolioStore = defineStore('portfolio', {
         description: 'Este proyecto ejemplifica mi capacidad para realizar un deploy completo de una aplicación web, integrando servicios back-end (autenticación y hosting).',
         technologies: ['Vue', 'Vue-Router', 'Firebase Hosting/Auth'],
         demoUrl: 'https://cursos-adweb-online.web.app/login',
-        repoUrl: '[Incluir el enlace al repositorio de GitHub para la documentación del proyecto.]',
+        repoUrl: 'https://github.com/odettegallo/adweb-online-cursos.git',
       },
     ],
 
