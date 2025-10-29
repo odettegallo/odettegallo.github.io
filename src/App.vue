@@ -10,21 +10,14 @@
       </router-view>
     </v-main>
 
-    <v-footer app padless color="primary"> 
-      <v-row justify="center" no-gutters>
-        <v-col class="text-center py-3 text-white" cols="12">
-          &copy; {{ new Date().getFullYear() }} — 
-          <strong>Odette Gallo Martínez | Bootcamp OTEC UNAB 2025</strong>
-        </v-col>
-      </v-row>
-    </v-footer>
 
+    <FooterP />
   </v-app>
 </template>
 
 <script setup>
 import NavBar from './components/NavBar.vue'; 
-
+import FooterP from './components/FooterP.vue';
 </script>
 
 <style>

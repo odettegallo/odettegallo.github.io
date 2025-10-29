@@ -16,6 +16,9 @@ import '@mdi/font/css/materialdesignicons.css' // Importar iconos Material Desig
 const vuetify = createVuetify({
   components,
   directives,
+  icons: {
+    defaultSet: 'mdi',
+  },
   theme: {
     themes: {
       light: {
