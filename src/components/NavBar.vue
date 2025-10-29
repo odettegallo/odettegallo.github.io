@@ -1,31 +1,27 @@
 <template>
-  <v-app-bar app color="primary" dark>
+  <v-app-bar app color="primary" :elevation="4">
     <v-app-bar-nav-icon class="d-md-none" @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-    <v-app-bar-title class="text-subtitle-1 text-md-h6">
+    <v-app-bar-title class="text-subtitle-1 text-md-h6 text-white"> 
       Odette Gallo - Portafolio Front-End
     </v-app-bar-title>
 
     <v-spacer class="d-none d-md-block"></v-spacer>
 
     <div class="d-none d-md-flex align-center">
-      <v-btn text to="/">
-        <v-icon left>mdi-account</v-icon>
+      <v-btn text to="/" class="text-white">
         About
       </v-btn>
 
-      <v-btn text to="/experience">
-        <v-icon left>mdi-wrench-check</v-icon>
+      <v-btn text to="/experience" class="text-white">
         Experience & Skills
       </v-btn>
       
-      <v-btn text to="/projects">
-        <v-icon left>mdi-laptop-code</v-icon>
+      <v-btn text to="/projects" class="text-white">
         Projects
       </v-btn>
 
-      <v-btn text to="/contact">
-        <v-icon left>mdi-email</v-icon>
+      <v-btn text to="/contact" class="text-white">
         Contact
       </v-btn>
 
@@ -36,7 +32,7 @@
         class="ml-2"
         v-if="store.contact.github && store.contact.github !== 'tu_github_url'"
       >
-        <v-icon>mdi-github</v-icon>
+        <v-icon color="white">mdi-github</v-icon>
       </v-btn>
     </div>
   </v-app-bar>
@@ -45,7 +41,7 @@
     <v-list nav>
       <v-list-item to="/" prepend-icon="mdi-account" title="About" link></v-list-item>
       <v-list-item to="/experience" prepend-icon="mdi-wrench-check" title="Experience & Skills" link></v-list-item>
-      <v-list-item to="/projects" prepend-icon="mdi-laptop-code" title="Projects" link></v-list-item>
+      <v-list-item to="/projects" prepend-icon="mdi-laptop" title="Projects" link></v-list-item>
       <v-list-item to="/contact" prepend-icon="mdi-email" title="Contact" link></v-list-item>
       
       <v-divider class="my-2"></v-divider>

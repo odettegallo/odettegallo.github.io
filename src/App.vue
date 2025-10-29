@@ -2,7 +2,7 @@
   <v-app>
     <NavBar />
 
-    <v-main class="bg-grey-lighten-3">
+    <v-main class="bg-background"> 
       <router-view v-slot="{ Component }">
         <transition name="fade" mode="out-in">
           <component :is="Component" />
@@ -10,7 +10,7 @@
       </router-view>
     </v-main>
 
-    <v-footer app padless color="grey-darken-3">
+    <v-footer app padless color="primary"> 
       <v-row justify="center" no-gutters>
         <v-col class="text-center py-3 text-white" cols="12">
           &copy; {{ new Date().getFullYear() }} — 

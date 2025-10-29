@@ -16,6 +16,19 @@ import '@mdi/font/css/materialdesignicons.css' // Importar iconos Material Desig
 const vuetify = createVuetify({
   components,
   directives,
+  theme: {
+    themes: {
+      light: {
+        dark: false,
+        colors: {
+          primary: '#1B3A5A', // Azul Marino Oscuro (profesionalidad)
+          secondary: '#A7BCCB', // Azul Grisáceo Claro (acentos sutiles)
+          accent: '#A7BCCB', // Usamos secondary como acento
+          background: '#f5f5f5', // Gris muy claro para el fondo
+        },
+      },
+    },
+  },
 })
 
 import 'bootstrap/dist/css/bootstrap.min.css'
