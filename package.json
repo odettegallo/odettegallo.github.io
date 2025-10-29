@@ -12,6 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mdi/font": "^7.4.47",
     "axios": "^1.13.0",
     "bootstrap": "^5.3.8",
     "pinia": "^3.0.3",
