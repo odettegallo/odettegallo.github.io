@@ -17,7 +17,7 @@
             :key="index"
             :title="service.title"
             :color="index % 2 === 0 ? 'primary' : 'secondary'"
-            :class="index % 2 === 0 ? 'text-white' : 'text-primary'"
+            :class="index % 2 === 0 ? 'text-black' : 'text-primary'"
             rounded="lg"
             class="mb-3"
           >
@@ -29,7 +29,7 @@
               >
                 <template v-slot:prepend>
                     <v-icon 
-                      :color="index % 2 === 0 ? 'white' : 'primary'"
+                      :color="index % 2 === 0 ? 'black' : 'primary'"
                       :icon="service.icon"
                       class="mr-4"
                     ></v-icon>
