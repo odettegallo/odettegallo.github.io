@@ -58,6 +58,7 @@
 
 <script setup>
 import { ref } from 'vue';
+import emailjs from '@emailjs/browser'; // Asegúrate de instalar emailjs si lo usas
 
 const formData = ref({
   name: '',
@@ -74,15 +75,27 @@ const snackbar = ref({
 
 // Implementación de la funcionalidad de envío (se detalla en la sección 2)
 const submitForm = async () => {
-  // Lógica de validación del formulario de Vuetify (opcional, ya cubierto con 'rules')
-  // Simulación de envío o llamada a la API de EmailJS / Formspree, etc.
+  if (!formData.value.name || !formData.value.email || !formData.value.message) {
+    snackbar.value = {
+      show: true,
+      text: 'Por favor completa todos los campos.',
+      color: 'error'
+    };
+    return;
+  }
   
   loading.value = true;
   // **AQUÍ VA LA LLAMADA AL SERVIDOR/SERVICIO DE EMAIL**
   
   try {
-    // Ejemplo: Llamada exitosa simulada
-    await new Promise(resolve => setTimeout(resolve, 1500)); 
+    const serviceID = 'porta_service_8xlj3jl';
+    const templateID = 'template_e2ci7o6';
+    const publicKey = 'YzHZQfslTp3kfGvcw';
+    await emailjs.send(serviceID, templateID, {
+        from_name: formData.value.name,
+        from_email: formData.value.email,
+        message: formData.value.message
+    }, publicKey);
     
     snackbar.value = {
       show: true,
