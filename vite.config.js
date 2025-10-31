@@ -4,11 +4,11 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
-const repoName = 'odettegallo.github.io';
+const repoName = '/odettegallo.github.io/';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: `/${repoName}/`,
+  base: `/`,
   plugins: [
     vue(),
     vueDevTools(),
