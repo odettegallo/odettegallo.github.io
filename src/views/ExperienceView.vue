@@ -3,6 +3,7 @@
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8">
         <h1 class="text-h3 text-center mb-6 text-primary font-weight-bold">
+          <v-icon size="x-large" class="mr-2">mdi-briefcase-account-outline</v-icon>
           Experience & Skills
         </h1>
 
