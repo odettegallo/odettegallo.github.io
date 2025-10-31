@@ -16,9 +16,9 @@
 
 <script setup>
 import { usePortfolioStore } from '../stores/usePortfolioStore';
-import HeroSection from '../components/HeroSection.vue'; // Asume que lo guardarás en /components
-import ServicesSection from '../components/ProfessionalFocusSection.vue'; // Asume que lo guardarás en /components
-import ServicesListSection from '../components/ServicesListSection.vue';
+import HeroSection from '../components/HomeComponents/HeroSection.vue'; // Asume que lo guardarás en /components
+import ServicesSection from '../components/HomeComponents/ProfessionalFocusSection.vue'; // Asume que lo guardarás en /components
+import ServicesListSection from '../components/HomeComponents/ServicesListSection.vue';
 
 const store = usePortfolioStore();
 </script>
