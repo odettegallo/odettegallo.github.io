@@ -1,35 +1,51 @@
 <template>
-  <v-container>
-    <v-card class="pa-5" elevation="5">
-      <h2 class="text-h4 mb-4">Proyecto Destacado: Aplicación Web con Firebase</h2>
-      <p class="text-body-1 mb-4">
-        Este proyecto demuestra la implementación completa de una aplicación Front-End, 
-        incluyendo autenticación de usuarios y despliegue en un entorno real.
-      </p>
+  <v-container class="mt-8">
+    <v-row justify="center">
+      <v-col cols="12" md="10" lg="8">
+        
+        <h2 class="text-h4 text-center mb-6 text-secondary font-weight-medium">
+          Detalle del Proyecto
+        </h2>
 
-      <v-list lines="one">
-        <v-list-item 
-          prepend-icon="mdi-link" 
-          title="Enlace Funcional (Demo)" 
-          :href="'https://cursos-adweb-online.web.app/login'" 
-          target="_blank"
-        ></v-list-item>
-        <v-list-item 
-          prepend-icon="mdi-code-braces" 
-          title="Código Fuente / Documentación" 
-          href="[Tu Enlace al Repositorio del Proyecto]" 
-          target="_blank"
-        ></v-list-item>
-        <v-list-item 
-          prepend-icon="mdi-tools" 
-          title="Tecnologías Usadas"
-          subtitle="Vue 3, Vue Router, Firebase Hosting & Auth."
-        ></v-list-item>
-      </v-list>
+        <ProjectCard 
+          :project="featuredProject"
+        />
 
-      <v-btn class="mt-4" color="secondary" to="/">
-        ← Volver a la Presentación
-      </v-btn>
-    </v-card>
+        <div class="text-center mt-8">
+          <v-btn 
+            color="secondary" 
+            size="large"
+            to="/projects" 
+            prepend-icon="mdi-arrow-left-circle"
+          >
+            Volver a la Lista de Proyectos
+          </v-btn>
+        </div>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
+
+<script setup>
+import { computed } from 'vue';
+import { usePortfolioStore } from '../stores/usePortfolioStore';
+import ProjectCard from '../components/ProjectCard.vue'; // <-- Reutilizamos el componente
+
+const store = usePortfolioStore();
+
+// Obtener el proyecto destacado (usamos el primero del array, ya que es el único definido en el store)
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
+const projectId = route.params.id;
+const selectedProject = computed(() => store.getProjectById(projectId));
+const featuredProject = computed(() => {
+  return selectedProject.value || {
+    name: 'Proyecto No Encontrado',
+    description: 'El proyecto solicitado no existe.',
+    technologies: [],
+    demoUrl: '#',
+    repoUrl: '#',
+  };
+});
+</script>
