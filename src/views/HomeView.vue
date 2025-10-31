@@ -5,7 +5,7 @@
       :title="store.title"
       :tagline="store.tagline"
       :summary="store.summary"
-      imageSrc="./src/assets/img/foto_perfil.jpg"
+      imageSrc="../assets/img/foto_perfil.jpg"
     />
 
     <ServicesSection />
