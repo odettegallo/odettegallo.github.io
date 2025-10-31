@@ -23,14 +23,7 @@
       </v-list-item>
     </v-list>
     
-    <v-alert
-      type="info"
-      variant="tonal"
-      class="mt-6 pa-3"
-      density="compact"
-      title="Actualiza tus Enlaces"
-      text="Recuerda reemplazar los valores por defecto en tu store Pinia."
-    ></v-alert>
+    
   </v-col>
 </template>
 
