@@ -25,7 +25,7 @@ const vuetify = createVuetify({
         dark: false,
         colors: {
           primary: '#1B3A5A', // Azul Marino Oscuro (profesionalidad)
-          secondary: '#A7BCCB', // Azul Grisáceo Claro (acentos sutiles)
+          secondary: '#0e5385ff', // Azul Grisáceo Claro (acentos sutiles)
           accent: '#A7BCCB', // Usamos secondary como acento
           background: '#f5f5f5', // Gris muy claro para el fondo
         },

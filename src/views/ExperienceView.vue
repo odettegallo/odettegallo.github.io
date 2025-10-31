@@ -3,7 +3,7 @@
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8">
         <h1 class="text-h3 text-center mb-6 text-primary font-weight-bold">
-          Experiencia & Skills
+          Experience & Skills
         </h1>
 
         <SkillSetCard :skills="store.technicalSkills" />
