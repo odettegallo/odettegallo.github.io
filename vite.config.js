@@ -8,7 +8,7 @@ const repoName = '/odettegallo.github.io/';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: `/`,
+  base: `${repoName}`,
   plugins: [
     vue(),
     vueDevTools(),
