@@ -7,7 +7,7 @@ import ContactView from '../views/ContactView.vue'       // Nueva vista
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL), 
   scrollBehavior(to, from, savedPosition) {
-      return { top: 0 }
+      return { top: 0 } 
     },
 
   routes: [
@@ -31,6 +31,8 @@ const router = createRouter({
       name: 'contact',
       component: ContactView
     },
+    {
+    }
     // Puedes añadir una ruta de 404 aquí si lo necesitas
     
   ]

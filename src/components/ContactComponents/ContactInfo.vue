@@ -28,7 +28,7 @@
 </template>
 
 <script setup>
-import { usePortfolioStore } from '../stores/usePortfolioStore';
+import { usePortfolioStore } from '../../stores/usePortfolioStore';
 
 const store = usePortfolioStore();
 </script>

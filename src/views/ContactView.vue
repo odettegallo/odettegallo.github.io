@@ -19,8 +19,8 @@
 </template>
 
 <script setup>
-import ContactForm from '@/components/ContactForm.vue';
-import ContactInfo from '@/components/ContactInfo.vue';
+import ContactForm from '@/components/ContactComponents/ContactForm.vue';
+import ContactInfo from '@/components/ContactComponents/ContactInfo.vue';
 // Ya no necesitamos importar usePortfolioStore aquí, lo hicimos en ContactInfo.vue
 </script>
 
