@@ -2,8 +2,11 @@
   <v-app-bar app color="primary" :elevation="4">
     <v-app-bar-nav-icon class="d-md-none" @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-    <v-app-bar-title class="text-subtitle-1 text-md-h6 text-white"> 
+    <v-app-bar-title class="text-subtitle-1 text-md-h6 text-white">
+      <router-link to="/" class="text-white text-decoration-none">
+      <v-icon left class="mr-2">mdi-folder-account</v-icon>
       Odette Gallo - Portafolio Front-End
+      </router-link>
     </v-app-bar-title>
 
     <v-spacer class="d-none d-md-block"></v-spacer>
@@ -60,12 +63,11 @@
 
 <script setup>
 import { ref } from 'vue';
-import { usePortfolioStore } from '../stores/usePortfolioStore'; // Ajusta la ruta si es necesario
+import { usePortfolioStore } from '../stores/usePortfolioStore'; 
 
 const store = usePortfolioStore();
 const drawer = ref(false); // Estado para el navigation drawer
 </script>
 
 <style scoped>
-/* Estilos adicionales si son necesarios */
 </style>
