@@ -52,12 +52,10 @@
 </template>
 
 <script setup>
-import { usePortfolioStore } from '../stores/usePortfolioStore';
+import { usePortfolioStore } from '@/stores/usePortfolioStore';
 
-// ⭐️ Importar el store para acceder a los enlaces
 const store = usePortfolioStore();
 </script>
 
 <style scoped>
-/* Estilos específicos del footer si fueran necesarios */
 </style>

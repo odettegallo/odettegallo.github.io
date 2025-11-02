@@ -63,7 +63,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import { usePortfolioStore } from '../stores/usePortfolioStore'; 
+import { usePortfolioStore } from '../../stores/usePortfolioStore'; 
 
 const store = usePortfolioStore();
 const drawer = ref(false); // Estado para el navigation drawer

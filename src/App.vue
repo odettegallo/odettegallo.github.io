@@ -16,8 +16,8 @@
 </template>
 
 <script setup>
-import NavBar from './components/NavBar.vue'; 
-import FooterP from './components/FooterP.vue';
+import NavBar from '@/components/LayoutComponents/NavBar.vue';
+import FooterP from '@/components/LayoutComponents/FooterP.vue';
 </script>
 
 <style>
