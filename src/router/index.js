@@ -1,8 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import ExperienceView from '../views/ExperienceView.vue' // Nueva vista
-import ProjectsView from '../views/ProjectsView.vue'     // Nueva vista
-import ContactView from '../views/ContactView.vue'       // Nueva vista
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL), 
@@ -14,26 +11,28 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: () => import('../views/HomeView.vue')
     },
     {
       path: '/experience',
       name: 'experience',
-      component: ExperienceView
+      component: () => import('../views/ExperienceView.vue')
     },
     {
-      path: '/projects', // Reemplaza /proyecto-destacado por /projects para ser más genérico
+      path: '/projects',
       name: 'projects',
-      component: ProjectsView
+      component: () => import('../views/ProjectsView.vue')
     },
     {
       path: '/contact',
       name: 'contact',
-      component: ContactView
+      component: () => import('../views/ContactView.vue')
     },
     {
+      path: '/:catchAll(.*)*',
+      name: 'not-found',
+      component: () => import('../views/NotFoundView.vue')
     }
-    // Puedes añadir una ruta de 404 aquí si lo necesitas
     
   ]
 })
