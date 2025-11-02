@@ -63,10 +63,6 @@
 <script setup>
 import { defineProps } from 'vue';
 
-/**
- * Propiedad 'project' requerida para el componente.
- * Define la interfaz esperada del objeto proyecto.
- */
 defineProps({
   project: {
     type: Object,
