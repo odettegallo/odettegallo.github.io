@@ -20,7 +20,7 @@
 
 <script setup>
 import { usePortfolioStore } from '../stores/usePortfolioStore';
-import ProjectCard from '../components/ProjectCard.vue'; // <-- Importar el nuevo componente
+import ProjectCard from '../components/ProjectsComponents/ProjectCard.vue'; // <-- Importar el nuevo componente
 
 const store = usePortfolioStore();
 </script>
