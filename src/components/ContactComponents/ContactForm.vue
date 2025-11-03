@@ -58,7 +58,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import emailjs from '@emailjs/browser'; // Asegúrate de instalar emailjs si lo usas
+import emailjs from '@emailjs/browser'; 
 
 const formData = ref({
   name: '',
