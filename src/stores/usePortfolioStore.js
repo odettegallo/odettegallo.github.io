@@ -47,7 +47,7 @@ export const usePortfolioStore = defineStore('portfolio', {
     projects: [
       {
         id: 1,
-        name: 'Aplicación Web con Firebase (Proyecto Destacado)',
+        name: 'Crypto Portal - Aplicación Web con Firebase (Proyecto Destacado)',
         description: 'Este proyecto ejemplifica mi capacidad para realizar un deploy completo de una aplicación web, integrando servicios back-end (autenticación y hosting).',
         technologies: ['Vue', 'Vue-Router', 'Firebase Hosting/Auth'],
         demoUrl: 'https://cripto-vue.web.app/login',
@@ -55,8 +55,8 @@ export const usePortfolioStore = defineStore('portfolio', {
       },
       {
         id: 2,
-        name: 'Aplicación Web con Firebase (Proyecto Destacado)',
-        description: 'Este proyecto ejemplifica mi capacidad para realizar un deploy completo de una aplicación web, integrando servicios back-end (autenticación y hosting).',
+        name: 'ADWEB Online - Aplicación Web con Firebase (Proyecto Destacado)',
+        description: 'Este proyecto ejemplifica mi capacidad para trabajar en equipo, realizar un deploy completo de una aplicación web, integrando servicios back-end (autenticación y hosting).',
         technologies: ['Vue', 'Vue-Router', 'Firebase Hosting/Auth'],
         demoUrl: 'https://cursos-adweb-online.web.app/login',
         repoUrl: 'https://github.com/odettegallo/adweb-online-cursos.git',
