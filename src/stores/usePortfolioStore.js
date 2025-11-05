@@ -18,6 +18,14 @@ export const usePortfolioStore = defineStore('portfolio', {
     // --- Experiencia Adicional y Certificaciones ---
     additionalExperience: [
       {
+        title: 'CV Profesional', 
+        details: ['Administradora Pública - Universidad de Valparaíso', 'Profesional Certificada en Soporte de Tecnologías de la Información - Google', 'Más de 4 años en Gestión Administrativa y 2 años en Soporte TI'],
+        diplomadosUrls: [
+          'https://drive.google.com/file/d/1umTvHM6XLewfC8nKlHaFBu-3nKveQx_v/view?usp=sharing',
+        
+        ],
+      },
+      {
         title: 'Diplomados', 
         details: ['Marketing Digital y Gestión Estratégica', 'Comunicación en la Era Digital', 'Emprendimiento Social y Marketing Personal', 'Diseño y Programación Web'],
         diplomadosUrls: [
