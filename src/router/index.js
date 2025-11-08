@@ -1,4 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
+import ContactView from '@/views/ContactView.vue'
 
 
 const router = createRouter({
@@ -26,7 +27,7 @@ const router = createRouter({
     {
       path: '/contact',
       name: 'contact',
-      component: () => import('../views/ContactView.vue')
+      component: ContactView
     },
     {
       path: '/:catchAll(.*)*',
