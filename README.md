@@ -3,7 +3,7 @@
 📄 This README is in Spanish. For the English version, click [here](README.en.md).
 
 Este repositorio contiene el código fuente del portafolio profesional desarrollado con Vue 3, Pinia, Vuetify y Vue Router. Puedes ver la versión publicada aquí:  
-🔗 [https://odettegallo.github.io/](https://odettegallo.github.io/)
+🔗 [https://odettegallo.github.io/#/](https://odettegallo.github.io/#/)
 
 ---
 
