@@ -71,3 +71,7 @@ All static portfolio information (projects, skills, contact) is centralized in t
 ## 🚀 View the Live Portfolio
 
 🔗 [https://odettegallo.github.io/](https://odettegallo.github.io/)
+
+## 🛡️ License
+
+This project is licensed under the terms of the [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.html), which means you are free to use, modify, and redistribute it, as long as you preserve this same license and credit the original author.

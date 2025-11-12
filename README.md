@@ -70,3 +70,7 @@ Toda la información estática del portafolio (proyectos, habilidades, contacto)
 ## 🚀 Ver el Portafolio en Línea
 
 🔗 [https://odettegallo.github.io/](https://odettegallo.github.io/)
+
+## 🛡️ Licencia
+
+Este proyecto está licenciado bajo los términos de la [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.html), lo que significa que puedes usarlo, modificarlo y redistribuirlo, siempre que mantengas esta misma licencia y atribuyas al autor original.
