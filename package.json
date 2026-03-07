@@ -10,7 +10,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist",
+    "test:mobile": "cross-env NODE_OPTIONS=--experimental-vm-modules jest tests/mobile"
   },
   "homepage": "https://odettegallo.github.io/",
   "dependencies": {
@@ -25,9 +26,12 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.1",
+    "cross-env": "^10.1.0",
     "cypress": "^15.8.2",
     "gh-pages": "^6.3.0",
+    "jest": "^30.2.0",
     "vite": "^7.1.11",
-    "vite-plugin-vue-devtools": "^8.0.3"
+    "vite-plugin-vue-devtools": "^8.0.3",
+    "webdriverio": "^9.24.0"
   }
 }
