@@ -45,7 +45,7 @@
       
       <v-col class="text-center py-3 text-white" cols="12">
         &copy; {{ new Date().getFullYear() }} — 
-        <strong>Desarrolladora Full Stack Java - Odette Gallo Martínez</strong>
+        <strong>Full Stack Java Developer - Odette Gallo Martínez</strong>
       </v-col>
     </v-row>
   </v-footer>
