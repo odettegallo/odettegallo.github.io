@@ -1,7 +1,7 @@
 <template>
   <v-card class="pa-6 mb-8 elevation-6" rounded="lg">
     <h2 class="text-h5 mb-4 border-b pb-2 text-secondary">
-      🛠️ Habilidades Clave en Desarrollo Front-End
+      🛠️ Habilidades Clave en Desarrollo Full Stack
     </h2>
     
     <v-list lines="two">
