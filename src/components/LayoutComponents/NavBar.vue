@@ -5,7 +5,7 @@
     <v-app-bar-title class="text-subtitle-1 text-md-h6 text-white">
       <router-link to="/" class="text-white text-decoration-none">
       <v-icon left class="mr-2">mdi-folder-account</v-icon>
-      Odette Gallo - Portafolio Front-End
+      Odette Gallo - Portafolio
       </router-link>
     </v-app-bar-title>
 
