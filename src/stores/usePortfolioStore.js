@@ -4,25 +4,24 @@ export const usePortfolioStore = defineStore('portfolio', {
   state: () => ({
     // --- Datos Principales ---
     name: 'Odette Gallo Martínez',
-    title: 'Front-End Trainee & Profesional TI',
-    tagline: 'Trainee en Desarrollo Front-End',
-    summary: '¡Hola! Soy Odette Gallo Martínez, y actualmente estoy cursando el Bootcamp de Aplicaciones Front End Trainee OTEC UNAB 2025, transformando mi sólida base administrativa y de TI en desarrollo Front-End. Poseo una base formal como Administradora Pública de la Universidad de Valparaíso y soy Profesional Certificada en Soporte de Tecnologías de la Información de Google. Cuento con más de 4 años de experiencia en Gestión Administrativa y 2 años en Soporte TI, lo que me permite abordar los proyectos con una visión integral, priorizando la organización, la eficiencia y la experiencia del usuario.',
+    title: 'Full Stack Java & Front-End Developer',
+    tagline: 'Desarrolladora Full Stack Java & Profesional TI',
+    summary: '¡Hola! Soy Odette Gallo Martínez. Tras consolidar mi base en el desarrollo Front-End (Vue.js) y mi experiencia en TI, he expandido mis competencias técnicas completando el bootcamp de Desarrollo de Aplicaciones Full Stack Java. Poseo una base formal como Administradora Pública de la Universidad de Valparaíso y soy Profesional Certificada en Soporte de Tecnologías de la Información de Google. Mi enfoque combina la visión analítica y de procesos con un sólido dominio técnico para construir aplicaciones web eficientes de extremo a extremo.',
     
     // --- Habilidades Técnicas ---
     technicalSkills: [
-      { category: 'Vue Ecosystem', items: ['Vue.js (Composition API)', 'Pinia (manejo de estado)', 'Vue-Router (navegación)', 'Vuetify (componentes UI)', 'Integración con Firebase'] },
-      { category: 'Conexión y Datos', items: ['Axios para consumo de APIs', 'Configuración de Rutas / Nuxt'] },
-      { category: 'Fundamentos Web', items: ['HTML5', 'CSS', 'JavaScript (JS)', 'Diseño responsivo', 'Buenas Prácticas de desarrollo'] },
+      { category: 'Ecosistema Java & Backend', items: ['Java (POO, Colecciones, Excepciones)', 'Spring Boot (APIs REST)', 'Bases de Datos Relacionales (SQL / MySQL / PostgreSQL)', 'JPA / Hibernate'] },
+      { category: 'Vue & Front-End Ecosystem', items: ['Vue.js (Composition API)', 'Pinia (manejo de estado)', 'Vue-Router (navegación)', 'Vuetify y Bootstrap (UI)', 'Integración con Firebase'] },
+      { category: 'Herramientas y Conectividad', items: ['Axios para consumo de APIs', 'Git & GitHub', 'Postman', 'Despliegue y Control de Versiones'] },
     ],
     
     // --- Experiencia Adicional y Certificaciones ---
     additionalExperience: [
       {
         title: 'CV Profesional', 
-        details: ['Administradora Pública - Universidad de Valparaíso', 'Profesional Certificada en Soporte de Tecnologías de la Información - Google', 'Más de 4 años en Gestión Administrativa y 2 años en Soporte TI'],
+        details: ['Administradora Pública - Universidad de Valparaíso', 'Profesional Certificada en Soporte de Tecnologías de la Información - Google', 'Desarrolladora Full Stack Java Trainee', 'Más de 4 años en Gestión Administrativa y 2 años en Soporte TI'],
         diplomadosUrls: [
           'https://drive.google.com/file/d/1umTvHM6XLewfC8nKlHaFBu-3nKveQx_v/view?usp=sharing',
-        
         ],
       },
       {
@@ -30,7 +29,6 @@ export const usePortfolioStore = defineStore('portfolio', {
         details: ['Marketing Digital y Gestión Estratégica', 'Comunicación en la Era Digital', 'Emprendimiento Social y Marketing Personal', 'Diseño y Programación Web'],
         diplomadosUrls: [
           'https://drive.google.com/file/d/1npz6bx-Bc-wO_o2ai1NJKyXCvo5D8L4k/view?usp=drive_link',
-        
         ],
       },
       {
@@ -47,16 +45,24 @@ export const usePortfolioStore = defineStore('portfolio', {
     projects: [
       {
         id: 1,
-        name: 'Crypto Portal - Aplicación Web con Firebase (Proyecto Destacado)',
-        description: 'Este proyecto ejemplifica mi capacidad para realizar un deploy completo de una aplicación web, integrando servicios back-end (autenticación y hosting).',
+        name: 'API REST Full Stack (Java & Spring Boot)',
+        description: 'Proyecto integrador backend desarrollado con Spring Boot y persistencia de datos relacional, implementando arquitectura limpia y buenas prácticas para servicios web.',
+        technologies: ['Java', 'Spring Boot', 'SQL', 'Maven', 'Git'],
+        demoUrl: 'https://github.com/odettegallo',
+        repoUrl: 'https://github.com/odettegallo',
+      },
+      {
+        id: 2,
+        name: 'Crypto Portal - Aplicación Web con Firebase',
+        description: 'Aplicación web interactiva que ejemplifica el manejo de estado, rutas y despliegue integrado con servicios de autenticación y hosting cloud.',
         technologies: ['Vue', 'Vue-Router', 'Firebase Hosting/Auth'],
         demoUrl: 'https://cripto-vue.web.app/login',
         repoUrl: 'https://github.com/odettegallo/cripto-vue.git',
       },
       {
-        id: 2,
-        name: 'ADWEB Online - Aplicación Web con Firebase (Proyecto Destacado)',
-        description: 'Este proyecto ejemplifica mi capacidad para trabajar en equipo, realizar un deploy completo de una aplicación web, integrando servicios back-end (autenticación y hosting).',
+        id: 3,
+        name: 'ADWEB Online - Plataforma de Cursos',
+        description: 'Aplicación web colaborativa orientada a la gestión y visualización de recursos educativos con diseño responsivo y control de navegación.',
         technologies: ['Vue', 'Vue-Router', 'Firebase Hosting/Auth'],
         demoUrl: 'https://cursos-adweb-online.web.app/login',
         repoUrl: 'https://github.com/odettegallo/adweb-online-cursos.git',
@@ -72,7 +78,6 @@ export const usePortfolioStore = defineStore('portfolio', {
   }),
   
   getters: {
-    // Getter simple para obtener el resumen principal
     getSummary: (state) => state.summary,
   },
 });

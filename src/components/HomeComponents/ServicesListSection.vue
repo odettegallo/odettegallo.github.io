@@ -7,7 +7,7 @@
         <div class="text-center mb-6">
           <v-chip color="primary" label class="text-uppercase font-weight-bold">
             <v-icon start icon="mdi-cogs"></v-icon>
-            Servicios Principales
+            Servicios y Competencias Principales
           </v-chip>
         </div>
 
@@ -47,49 +47,44 @@
 <script setup>
 const services = [
   { 
-    title: 'Desarrollo de Aplicaciones Web Front-End', 
-    icon: 'mdi-code-braces', 
-    description: 'Creación de aplicaciones con HTML, CSS y JavaScript, implementando funcionalidades de usuario final.' 
+    title: 'Desarrollo Back-End con Java y Spring Boot', 
+    icon: 'mdi-server', 
+    description: 'Creación de lógica de servidor robusta, arquitectura limpia y desarrollo de APIs REST escalables utilizando Java y Spring Boot.' 
   },
   { 
-    title: 'Diseño e Implementación de Interfaces de Usuario Web (UI)', 
-    icon: 'mdi-palette', 
-    description: 'Interfaces web visuales e interactivas utilizando buenas prácticas y frameworks como Bootstrap y Vue.js.' 
+    title: 'Diseño y Gestión de Bases de Datos Relacionales', 
+    icon: 'mdi-database', 
+    description: 'Modelado de datos, consultas SQL eficientes y persistencia mediante JPA/Hibernate para bases de datos relacionales.' 
   },
   { 
-    title: 'Programación JavaScript Avanzada', 
-    icon: 'mdi-language-javascript', 
-    description: 'Codificación de soluciones con POO, orientación a eventos y programación asíncrona.' 
+    title: 'Desarrollo de Aplicaciones Web Full Stack', 
+    icon: 'mdi-layers-triple', 
+    description: 'Integración completa de sistemas conectando interfaces de usuario dinámicas con servicios backend sólidos.' 
   },
   { 
-    title: 'Consumo y Procesamiento de APIs', 
-    icon: 'mdi-api', 
-    description: 'Conexión y manejo de datos de APIs externas utilizando XHR y la API Fetch.' 
-  },
-  { 
-    title: 'Control de Versiones con Git y GitHub', 
-    icon: 'mdi-git', 
-    description: 'Gestión segura y colaborativa del código fuente de proyectos.' 
-  },
-  { 
-    title: 'Desarrollo Responsivo (Responsive Design)', 
-    icon: 'mdi-monitor-cellphone', 
-    description: 'Creación de sitios web que se adaptan automáticamente a cualquier dispositivo y tamaño de pantalla.' 
-  },
-  { 
-    title: 'Uso de Frameworks CSS (Bootstrap)', 
-    icon: 'mdi-bootstrap', 
-    description: 'Implementación de layouts y estilos complejos utilizando frameworks CSS como Bootstrap.' 
-  },
-  { 
-    title: 'Desarrollo con Vue.js (Frameworks de Componentes)', 
+    title: 'Desarrollo de Aplicaciones Web Front-End (Vue.js)', 
     icon: 'mdi-vuejs', 
-    description: 'Creación de interfaces interactivas con Vue.js, Vue Router y gestión de estado.' 
+    description: 'Creación de interfaces interactivas y modulares utilizando Vue.js, Vue Router y gestión de estado con Pinia.' 
   },
   { 
-    title: 'Construcción y Mantenimiento de Portafolios Digitales', 
-    icon: 'mdi-folder-open', 
-    description: 'Elaboración y presentación de productos tecnológicos en un portafolio personal (GitHub, hosting, videos).' 
+    title: 'Consumo y Procesamiento de APIs REST', 
+    icon: 'mdi-api', 
+    description: 'Conexión, comunicación asíncrona y manejo de datos entre servicios utilizando Axios y Fetch.' 
+  },
+  { 
+    title: 'Control de Versiones y Gestión de Código (Git & GitHub)', 
+    icon: 'mdi-git', 
+    description: 'Gestión segura, control de cambios y trabajo colaborativo o individual del código fuente de proyectos.' 
+  },
+  { 
+    title: 'Desarrollo Responsivo y Diseño UI (Bootstrap / Vuetify)', 
+    icon: 'mdi-monitor-cellphone', 
+    description: 'Creación de sitios web adaptables a cualquier dispositivo móvil o pantalla utilizando frameworks de componentes modernos.' 
+  },
+  { 
+    title: 'Fundamentos de Soporte TI y Resolución de Problemas', 
+    icon: 'mdi-lifebuoy', 
+    description: 'Visión integral orientada a la solución de incidencias tecnológicas, optimización de procesos y soporte técnico especializado.' 
   },
 ];
 </script>
