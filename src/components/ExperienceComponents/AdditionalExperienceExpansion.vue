@@ -16,11 +16,11 @@
                         {{ detail }}
                     </li>
                 </ul>
-                <div v-if="exp.diplomadosUrls || exp.coursesUrls" class="mt-3">
+                <div v-if="exp.cvUrl || exp.diplomadosUrls || exp.coursesUrls" class="mt-3">
                     <span class="font-weight-bold">Enlaces de Verificación:</span>
                     <div class="d-flex flex-wrap mt-1">
                         <v-btn 
-                            v-for="(url, k) in [...(exp.diplomadosUrls || []), ...(exp.coursesUrls || [])]" 
+                            v-for="(url, k) in [...(exp.cvUrl || []), ...(exp.diplomadosUrls || []), ...(exp.coursesUrls || [])]" 
                             :key="k" 
                             :href="url" 
                             target="_blank" 

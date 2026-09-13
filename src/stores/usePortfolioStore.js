@@ -20,8 +20,8 @@ export const usePortfolioStore = defineStore('portfolio', {
       {
         title: 'CV Profesional', 
         details: ['Administradora Pública - Universidad de Valparaíso', 'Profesional Certificada en Soporte de Tecnologías de la Información - Google', 'Desarrolladora Full Stack Java Trainee', 'Más de 4 años en Gestión Administrativa y 2 años en Soporte TI'],
-        diplomadosUrls: [
-          'https://drive.google.com/file/d/1umTvHM6XLewfC8nKlHaFBu-3nKveQx_v/view?usp=sharing',
+        cvUrl: [
+          'https://docs.google.com/document/d/12A-tuzPs4FhmecF0gmFERo8LVv3mm6Q0/edit?usp=sharing&ouid=101854029669132058599&rtpof=true&sd=true',
         ],
       },
       {
@@ -35,7 +35,8 @@ export const usePortfolioStore = defineStore('portfolio', {
         title: 'Cursos Destacados (Más de 100)', 
         details: ['IA Generativa (Microsoft y LinkedIn)', 'Análisis de Datos y Fundamentos de Ciberseguridad', 'Gestión del Tiempo y Gestión de Proyectos', 'Habilidades Profesionales Blandas y Liderazgo', 'Microsoft 365 Avanzado (Excel, Word, etc.)'],
         coursesUrls: [
-          'https://drive.google.com/file/d/1xaW5Z5zYLm60MGNwgfn-fZq6VRhyF14g/view?usp=drive_link',
+          'https://drive.google.com/file/d/10Xc_IkLR_4bSYe7aw8O5K_nwgTOjCBjH/view?usp=sharing',
+          'https://drive.google.com/file/d/1wJt7if6DrToGMkqtAZTJSLW5vG6K6DDl/view?usp=sharing',
           'https://drive.google.com/file/d/1WviRsGUJrb9aKrfi4dFW_SMo9jBLyzju/view?usp=drive_link'
         ],
       },
