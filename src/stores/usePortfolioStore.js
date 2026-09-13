@@ -45,14 +45,22 @@ export const usePortfolioStore = defineStore('portfolio', {
     projects: [
       {
         id: 1,
-        name: 'API REST Full Stack (Java & Spring Boot)',
-        description: 'Proyecto integrador backend desarrollado con Spring Boot y persistencia de datos relacional, implementando arquitectura limpia y buenas prácticas para servicios web.',
-        technologies: ['Java', 'Spring Boot', 'SQL', 'Maven', 'Git'],
-        demoUrl: 'https://github.com/odettegallo',
-        repoUrl: 'https://github.com/odettegallo',
+        name: 'Sistema de Gestión de Biblioteca (Java Web & Servlets)',
+        description: 'Aplicación web monolítica desarrollada en Java (Servlets y JSP) para la gestión integral de préstamos de libros, usuarios y catálogo bibliográfico. Implementa persistencia con H2 Database y MySQL, conectividad JDBC y ejecución sobre Apache Tomcat.',
+        technologies: ['Java 21', 'Servlets', 'JSP', 'Apache Tomcat', 'MySQL', 'H2 Database', 'Eclipse / STS'],
+        //demoUrl: 'https://github.com/odettegallo',
+        repoUrl: 'https://github.com/odettegallo/ProyectoBiblioteca',
       },
       {
         id: 2,
+        name: 'SpringEduManager (Java & Spring Boot)',
+        description: 'Proyecto integrador backend desarrollado con Spring Boot y persistencia de datos relacional, implementando arquitectura limpia y buenas prácticas para servicios web.',
+        technologies: ['Java', 'Spring Boot', 'SQL', 'Maven', 'Git'],
+        //demoUrl: 'https://github.com/odettegallo',
+        repoUrl: 'https://github.com/odettegallo/SpringEduManager',
+      },
+      {
+        id: 3,
         name: 'Crypto Portal - Aplicación Web con Firebase',
         description: 'Aplicación web interactiva que ejemplifica el manejo de estado, rutas y despliegue integrado con servicios de autenticación y hosting cloud.',
         technologies: ['Vue', 'Vue-Router', 'Firebase Hosting/Auth'],
@@ -60,7 +68,7 @@ export const usePortfolioStore = defineStore('portfolio', {
         repoUrl: 'https://github.com/odettegallo/cripto-vue.git',
       },
       {
-        id: 3,
+        id: 4,
         name: 'ADWEB Online - Plataforma de Cursos',
         description: 'Aplicación web colaborativa orientada a la gestión y visualización de recursos educativos con diseño responsivo y control de navegación.',
         technologies: ['Vue', 'Vue-Router', 'Firebase Hosting/Auth'],
