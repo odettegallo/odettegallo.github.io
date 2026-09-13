@@ -33,8 +33,27 @@ export const usePortfolioStore = defineStore('portfolio', {
       },
       {
         title: 'Cursos Destacados (Más de 100)', 
-        details: ['IA Generativa (Microsoft y LinkedIn)', 'Análisis de Datos y Fundamentos de Ciberseguridad', 'Gestión del Tiempo y Gestión de Proyectos', 'Habilidades Profesionales Blandas y Liderazgo', 'Microsoft 365 Avanzado (Excel, Word, etc.)'],
+        
+        title: 'Cursos Destacados en Tecnología y Ciberseguridad', 
+        details: [
+          'Transformación Digital con IA y Automatización - Academia Desafío Latam',
+          'Fundamentos de Test Automation Engineer - Academia Desafío Latam',
+          'MSC LINUX 101 & Pentesting 101 - 8dot8 Academy / TTPSEC',
+          'MSC Rol del Analista SOC y Ciberseguridad (Phishing y Fraude Digital) - Contraloría General / 8dot8'
+        ],
         coursesUrls: [
+          'https://drive.google.com/file/d/10Xc_IkLR_4bSYe7aw8O5K_nwgTOjCBjH/view?usp=sharing',
+        ],
+      },
+      {
+        title: 'Gestión, Procesos y Especializaciones del Estado', 
+        details: [
+          'Certificación de Competencias en Compras Públicas (Nivel Avanzado e Intermedio) - Dirección ChileCompra',
+          'Administración Financiera del Estado y Estatuto Administrativo - Contraloría General de la República',
+          'Excel Aplicado a los Negocios (Nivel Avanzado) - Universidad Austral',
+          'Gestión de Proyectos y Resolución de Conflictos - University of California Irvine'
+        ],
+         coursesUrls: [
           'https://drive.google.com/file/d/10Xc_IkLR_4bSYe7aw8O5K_nwgTOjCBjH/view?usp=sharing',
           'https://drive.google.com/file/d/1wJt7if6DrToGMkqtAZTJSLW5vG6K6DDl/view?usp=sharing',
           'https://drive.google.com/file/d/1WviRsGUJrb9aKrfi4dFW_SMo9jBLyzju/view?usp=drive_link'
